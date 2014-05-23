@@ -35,6 +35,9 @@
   <%end%>  
 
 </div>
+<% if session[:turn] == "dealer" %>
+  <%= "Dealer's total= " + calculate_total(session[:dealer_cards]).to_s %>
+<% end %>
 
 <br>
 <br>
